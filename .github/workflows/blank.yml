@@ -1,0 +1,21 @@
+name: Exercice 1
+
+on: push
+
+jobs:
+  job_ex1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Afficher les paroles
+        run: |
+          cat <<'EOF'
+          Sur ma mère des envieux, ils ont pas un pas deux
+          Ils rêvent de voir ma chute, cette bande de chiens piteux
+          Un p'tit placement de produit et j'gratte un chèque puis deux
+          Et je remercie Dieu de ne pas m'avoir fait comme eux
+          Et qu'est ce que je vais faire maintenant ?
+          Des milliers de fans en plus ça sera plus la même qu'avant (bang, bang, bang)
+          Annaba, Soleil levant
+          Les jaloux bavent sur leurs écrans et moi je suis toujours le même qu'avant
+          EOF
